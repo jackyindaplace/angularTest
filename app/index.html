@@ -28,11 +28,14 @@
 
     <div class="container">
     <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+	
+		<div class="carousel" style="width:50%;height:400px;">
+			<div ng-include="'views/carousel.html'" ng-controller="CarouselDemoCtrl"></div>
+		</div>
+			
     </div>
 	
-	<div class="carousel" style="width:50%;height:400px;">
-		<div ng-include="'views/carousel.html'" ng-controller="CarouselDemoCtrl"></div>
-    </div>
+	
 	
 	<div class="footer">
       <div class="container">
