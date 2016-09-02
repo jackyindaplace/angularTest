@@ -8,6 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -29,7 +30,7 @@
     <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
     </div>
 	
-	<div class="carousel">
+	<div class="carousel" style="width:50%;height:400px;">
 		<div ng-include="'views/carousel.html'" ng-controller="CarouselDemoCtrl"></div>
     </div>
 	
@@ -58,10 +59,6 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-	 
-  
     <!-- endbower -->
     <!-- endbuild -->
 
