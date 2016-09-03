@@ -30,12 +30,40 @@ angular.module('testApp').controller('CarouselDemoCtrl', function ($scope) {
   $scope.noWrapSlides = false;
   $scope.active = 0;
   var slides = $scope.slides = [];
+  
+  
+  slides.push(
+    {
+      image: './images/countachSwimming.jpg',
+	  text:'countach',
+	  id: 0
+	  });
+	  
+    slides.push({
+      image: './images/countachWhite1.png',
+	  text:'countach2',
+	  id: 1
+    });
+    slides.push({
+      image: './images/countachWhite2.png',
+	  text:'countach3',
+	  id: 2
+    });
+    slides.push({
+      image: './images/lamborghiniBlack.jpg',
+	  text:'countach4',
+	  id: 3
+    });
+  
   var currIndex = 0;
+  
+  
 
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length + 1;
     slides.push({
-      image: '//unsplash.it/' + newWidth + '/300',
+      /* image: '//unsplash.it/' + newWidth + '/300', */
+	  image:'./images/lamborghiniBlack.jpg',
       text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
       id: currIndex++
     });
@@ -46,9 +74,6 @@ angular.module('testApp').controller('CarouselDemoCtrl', function ($scope) {
     assignNewIndexesToSlides(indexes);
   };
 
-  for (var i = 0; i < 4; i++) {
-    $scope.addSlide();
-  }
 
   // Randomize logic below
 
