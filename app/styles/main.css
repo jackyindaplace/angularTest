@@ -5,11 +5,21 @@
 .right.carousel-control, .left.carousel-control { display: none; }
 
 /* Carousel img full size */
-div.container img{width:100%;}
+div.container img{max-width:100%;}
 
-ol.carousel-indicators li{
-	width:30px;
-	height:30px;
+ol.carousel-indicators li, ol.carousel-indicators li.active{
+	width:25px;
+	height:25px;
+}
+
+.carousel {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+ol.carousel-indicators li.active {
+   
+    background-color: #D3D3D3;
 }
 
 .browsehappy {
@@ -41,6 +51,7 @@ body {
   margin-bottom: 0;
   line-height: 40px;
 }
+
 
 /* Custom page footer */
 .footer {
@@ -75,6 +86,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     /* max-width: 730px; */
+	/* display:block; */
   }
 
   /* Remove the padding we set earlier */
@@ -83,6 +95,7 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
+	padding-top: 0;
   }
   /* Space out the masthead */
   .header {
