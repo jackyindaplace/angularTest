@@ -8,8 +8,8 @@
 div.container img{max-width:100%;}
 
 ol.carousel-indicators li, ol.carousel-indicators li.active{
-	width:25px;
-	height:25px;
+	width:20px;
+	height:20px;
 }
 
 .carousel {
