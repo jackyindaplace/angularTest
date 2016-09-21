@@ -26,7 +26,7 @@ slides.push(
 }); */
 
 angular.module('testApp').controller('CarouselDemoCtrl', function ($scope) {
-  $scope.myInterval = 5000;
+  $scope.myInterval = 500000;
   $scope.noWrapSlides = false;
   $scope.active = 0;
   $scope.colors = ['blue','red', 'green','yellow'];
